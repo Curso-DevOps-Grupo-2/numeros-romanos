@@ -16,8 +16,14 @@ public class DecimalToRomanoTest {
         assertEquals("CCXLIX", NumeroRomano.decToRomano(249));
         assertEquals("CCLV", NumeroRomano.decToRomano(255));
         assertEquals("CXLV", NumeroRomano.decToRomano(145));
-        assertEquals("M", NumeroRomano.decToRomano(1000));
-        
+        assertEquals("M", NumeroRomano.decToRomano(1000));  
+
+    }
+
+    @Test
+    public void testDecToRomanoError() {
+
+        assertEquals("I", NumeroRomano.decToRomano(234));
 
     }
 }
